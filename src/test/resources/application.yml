@@ -1,0 +1,13 @@
+server:
+  port: 7900
+
+shiro: 
+  enabled: true
+  sessionManager:
+    sessionIdCookieEnabled: true
+    sessionIdUrlRewritingEnabled:  true
+  openid:
+    enabled: true
+    servers:
+      xx : 
+        
