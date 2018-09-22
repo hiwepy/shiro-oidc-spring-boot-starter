@@ -2,7 +2,7 @@ package org.apache.shiro.spring.boot;
 
 import java.util.Map;
 
-import org.apache.shiro.spring.boot.cache.ShiroEhCacheConfiguration;
+import org.apache.shiro.spring.boot.cache.ShiroEhCache2CacheConfiguration;
 import org.apache.shiro.spring.config.web.autoconfigure.ShiroWebAutoConfiguration;
 import org.mitre.jose.keystore.JWKSetKeyStore;
 import org.mitre.jwt.signer.service.JWTSigningAndValidationService;
@@ -362,7 +362,7 @@ import com.nimbusds.jose.jwk.JWK;
  */
 @Configuration
 @AutoConfigureBefore(ShiroWebAutoConfiguration.class)
-@AutoConfigureAfter(ShiroEhCacheConfiguration.class)
+@AutoConfigureAfter(ShiroEhCache2CacheConfiguration.class)
 @ConditionalOnProperty(prefix = ShiroOpenidProperties.PREFIX, value = "enabled", havingValue = "true")
 @EnableConfigurationProperties({ ShiroOpenidProperties.class })
 public class ShiroOpenidAutoConfiguration implements ApplicationContextAware, WebMvcConfigurer {
