@@ -376,7 +376,7 @@
         <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
 		<maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
  		<mitreid.version>1.3.2</mitreid.version>
-		<shiro-biz.version>1.0.0-SNAPSHOT</shiro-biz.version>
+		<spring-boot-starter-shiro-biz.version>1.0.0-SNAPSHOT</spring-boot-starter-shiro-biz.version>
 	</properties>
 	
 	<dependencies>
@@ -444,11 +444,11 @@
 		   <version>${mitreid.version}</version>
 		</dependency>
 		
-		<!-- https://github.com/vindell/spring-boot-starter-shiro-biz -->
+		<!-- https://github.com/hiwepy/shiro-biz-spring-boot-starter -->
 		<dependency>
-			<groupId>com.github.vindell</groupId>
-			<artifactId>spring-boot-starter-shiro-biz</artifactId>
-			<version>${shiro-biz.version}</version>
+			<groupId>com.github.hiwepy</groupId>
+			<artifactId>shiro-biz-spring-boot-starter</artifactId>
+			<version>${spring-boot-starter-shiro-biz.version}</version>
 		</dependency>
 		
 	</dependencies>
